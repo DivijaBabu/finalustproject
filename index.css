@@ -16,23 +16,28 @@
     background: #555;
   }
 
+  @font-face {
+    font-family: 'Arboria';
+    src: url('fonts/Arboria-Medium.ttf');
+  }
+  @font-face {
+    font-family: 'Arboria-light';
+    src: url('fonts/Arboria-Book.ttf');
+  }
 
 body{
     height:100vh;
-    font-family: 'Roboto', sans-serif;
 }
 header{
     border:5px #747171;
     padding:0 1rem;
     font-size: 0.875rem;
+    font-family: 'Arboria';
     font-weight: bold;
     display:flex;
     height: 4rem;
     align-items: center;
     justify-content: space-between;
-    font-size: 500;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
 }
 .ustlogo {
     display: flex;
@@ -47,12 +52,8 @@ header{
     text-align: center;
 }
 .headernavimages {
+    font-family: 'Arboria';
     font-size: 0.875rem;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.43;
-    letter-spacing: normal;
     color: #d3d3d3;
     margin-right: 5px;
 }
@@ -68,8 +69,9 @@ nav a {
     color:#006e74;
     background-color: white;
     align-items: center;
+    font-family: 'Arboria';
     font-size: 0.875rem;
-    font-weight: bold;
+    font-weight: 500;
 }
 nav ul {
     height:100%;
@@ -104,23 +106,29 @@ nav li {
 .notification:hover {
     color:#006e74;
 }
+.profile-name{
+    text-align:center;
+    margin-right:15px;
+    font-family: 'Arboria';
+    font-weight: 500;
+}
 .profile{
         float: right;
         border-radius: 15px;
 }
 .bodyhead{
-    height:6rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr)    ;
+    grid-gap: 0.704rem;
     padding-bottom: 1rem;
-    display: flex;
-    justify-content: space-evenly;
-    column-gap: 20px;
-    background-color: #f2f4f8;
 }
 .mainbodycontainer{
     height:calc(100vh - 6rem);
     background-color: #f2f4f8;
     padding:1rem;
     font-size: 0.875rem;
+    font-family: 'Arboria';
     font-weight: 500;
 }
 .overview-card{
@@ -130,14 +138,33 @@ nav li {
     height: 4.5rem;
     flex-basis: 25%;
     align-items: center;
+    font-family: 'Arboria';
+    justify-content: space-between;
+}
+.overviewcard4{
+    padding: 10px;
+    display: flex;
+    background-color: white;
+    height: 4.5rem;
+    flex-basis: 25%;
+    font-family: 'Arboria';
     justify-content: space-between;
 }
 .text{
+    font-family: 'Arboria';
     align-items: center; 
     width: 85%;
 }
 .image {
     padding: 5px;
+    width: 15%;
+    border: 1px;
+    margin-left: 7px;
+    align-items: center;
+    justify-content: flex-end;
+}
+.imagecard4 {
+    padding: 17px 2px 0px 5px;
     width: 15%;
     border: 1px;
     margin-left: 7px;
@@ -151,6 +178,7 @@ nav li {
 }
 .texttop{
     margin-top: 10px;
+    font-family: 'Arboria';
     font-weight: 500;
     display: flex;
     color:#666666;
@@ -174,11 +202,6 @@ nav li {
     font-size: 30px;
     font-weight: bolder;
 }
-
-.textcard4 {
-    display: flex;
-    flex-direction: column;
-}
 .inside {
     display: flex;
     color: #666;
@@ -186,16 +209,21 @@ nav li {
     font-weight: 500;
 }
 .smalltext {
+    padding-top: 0.4rem;
+    align-items: center;
     display: flex;
     color:#7c8089;
-    font-weight: bold;
+    font-weight: normal;
     justify-content: space-between;
 }
 
 .smalltext p {
-    color: black;
+    
+    color: #7c8089;
+    font-size: 0.75rem;
 }
 .color1 {
+    margin-top: 0.4rem;
     margin-right: 2px;
     display: inline-block;
     height: 10px;
@@ -204,6 +232,7 @@ nav li {
     border-radius: 50%;
 }
 .color2 {
+    margin-top: 0.4rem;
     margin-right: 4px;
     display: inline-block;
     height: 10px;
@@ -212,6 +241,7 @@ nav li {
     border-radius: 50%;
 }
 .color3 {
+    margin-top: 0.4rem;
     margin-right: 4px;
     display: inline-block;
     height: 10px;
@@ -220,6 +250,7 @@ nav li {
     border-radius: 50%;
 }
 .color4 {
+    margin-top: 0.4rem;
     display: inline-block;
     margin-right: 4px;
     height: 10px;
@@ -253,17 +284,21 @@ nav li {
     font-weight: 500;
 }
 .bodynavigation a:hover {
-    color: #36c8ea;
+    color: #006e74;
 }
 .viewshipment-desktop{
     display: flex;
-    color: #36c8ea;
+    color: #006e74;
     font-size:0.75rem;
     font-weight: 500;
+    font-family: 'Arboria';
     align-items: center;
 }
 .viewshipment-desktop:hover{
    text-decoration: underline;
+}
+.viewshipment:hover{
+    text-decoration:underline;
 }
 .bodytabs{
     display:flex;
@@ -272,8 +307,12 @@ nav li {
     padding: 0.625rem 1.25rem;
     font-size: 1rem;
     font-weight: 500;
+    font-family: 'Arboria';
     color: #2f3749;
     
+}
+.headtabs:hover{
+    border-bottom: 2px solid #006e74;
 }
 .arrowimages {
     font-size: 10px;
@@ -297,11 +336,11 @@ nav li {
 }
 .tab:hover{
     color:#fff;
-    background-color: #36c8ea;
+    background-color: #006e74;
 }
 .active{
     color:#fff;
-    background-color: #36c8ea;
+    background-color: #006e74;
 }
 
 .count{
@@ -310,9 +349,8 @@ nav li {
 .redalert{
     color:#f62020;
 }
-
 .bodybottom{
-    height:calc(100vh - 7rem);
+    height:calc(100% - 7rem);
     display:flex;
     justify-content: space-between;
 }
@@ -344,13 +382,18 @@ nav li {
     background-color: white;
 }
 .riskcontent {
+    font-family: 'Arboria-light';
     align-items: center;
     background-color: #f8f9fb;
     padding:0.625rem;
 }
+.riskcontent p{
+    font-weight: 100;
+}
 .ustheading{
     padding:0.625rem;
     text-align: center;
+    font-weight: 500;
 }
 .leftsidebottom{
         overflow-y: scroll;
@@ -364,7 +407,7 @@ nav li {
     grid-template-columns: repeat(2,1fr);
     grid-gap: 1rem;
     width: 100%;
-    height:22rem;
+    height:21rem;
 }
 .card{
     background-color: white;
@@ -392,6 +435,7 @@ nav li {
     color: #017cee;
     font-size: 0.7rem;
     font-weight: bold;
+    font-family: 'Arboria';
     padding: 0.25rem;
     padding-top: 0.4rem; 
 }
@@ -408,19 +452,23 @@ nav li {
     align-items: center;
     gap: 14px;
 }
+.destination{
+    color:#7c8089;
+    font-size: small;
+}
 b{
+    font-family: 'Arboria-light';
     margin-top:3px;
     color: black;
 }
 .lefttext{
     display: flex;
+    font-family: 'Arboria-light';
+    font-weight: 500;
     justify-content: space-between;
     color: grey;
     padding: 1.25rem 0.25rem;
 }
-/* .righttext{
-    padding-left:10rem;
-} */
 .footer{
     display: flex;
     justify-content: space-between;
@@ -430,67 +478,149 @@ b{
     display: none;
 }
 
-
-
-@media only screen and (max-width: 768px) {
-    .mainbodycontainer {
-        padding: 0;
+/* mobilephones */
+@media only screen and (max-width: 600px) {
+    *{
+        padding:0%;
+        margin:0%;
     }
-    .hambugericon{
+    ::-webkit-scrollbar{
+        width:0.15rem;
+        height:0.15rem;
+    }
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #888; 
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+      .hambugericon{
         display: block;
         width: 24px;
         height: 24px;
+        padding-left: 5px;
     }
-
     .hambugericon img {
         height: 100%;
         width: 100%;
     }
-
-    nav {
-        display: none;
-    }
-
-    .bodyhead {
-        width: auto;
-        overflow-x: scroll;
-    }
-
-    .bodybottom {
-        flex-direction: column;
-    }
-
-    .bodyleftside {
-        width: auto;
-        margin: 1rem;
-    }
-    .bodyrightside {
-        width: auto;
-        box-shadow: 0 -5px 20px 0 rgba(183, 194, 210, 0.3);
-    }
-
-    .tabscontainer {
-        overflow-x: scroll;
-    }
-
-    .headtabs {
-        padding: 0.5rem 0.8rem;
-    }
-
-    .viewshipment-desktop {
-        display: none;
-    }
-
-    .viewshipment {
-        display: block;
-        white-space: nowrap;
-    }
-
-    .bottomcards {
-        grid-template-columns: 1fr;
-    }
-
     .profile-name {
         display: none;
     }
+    .mainbodycontainer{
+        padding:1rem;
+        height:auto;
+    }
+    
+      header nav{
+        display: none;
+      }
+      .bodyhead{
+        overflow-x: scroll;
+      }
+      .overview-card{
+        width:310px;
+        flex-basis: none;
+      }
+      .overviewcard4{
+        width:310px;
+        flex-basis: none;
+      }
+      .bodybottom{
+        display: grid;
+        grid-template-columns: auto;
+      }
+      .bodyrightside{
+        width: 98%;
+        padding-top: 1rem;
+      }
+      .bodyleftside{
+        width:55%;
+      }
+      .headtabs {
+        padding: 0.625rem 0.25rem;
+      }
+      .bodytabs{
+        width:255px;
+      }
+      .viewshipment-desktop {
+        display: none;
+    }
+    .viewshipment {
+        display: block;
+        color:#006e74;
+        white-space: nowrap;
+    }
+      .leftsidetop{
+        overflow-x: scroll;
+        width: 327px;
+      }
+      .tab{
+        padding:0.25rem;
+      }
+      .leftsidebottom{
+        width:181%;
+      }
+      .bottomcards {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 1rem;
+      }
+      .tab{
+        display: flex;
+      }
+}      
+
+
+/* tablet */
+@media (min-width: 700px) and (max-width:1200px) {
+    *{
+        padding:0;
+        margin:0;
+    }
+    nav {
+        display: none;
+    }
+    body{
+        width:100%;
+    }
+ .hambugericon{
+    display: block;
+    width: 24px;
+    height: 24px;
+    padding-left: 5px;
+}
+.mainbodycontainer{
+    padding:1rem;
+    height:auto;
+}
+.hambugericon img {
+    height: 100%;
+    width: 100%;
+}
+.bodyhead {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 0.704rem;
+    padding-bottom: 1rem;
+}
+.bodybottom{
+    display: grid;
+}
+.bodyleftside{
+    width:100%;
+}
+.bodyrightside{
+    padding-top:1rem;
+    width:100%;
+}
+}
+@media (min-width:1700px) and (max-width:7500px) {
+  .mainbodycontainer{
+    padding-left: 20rem;
+    padding-right: 20rem;
+  }  
 }
