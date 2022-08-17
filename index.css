@@ -24,11 +24,14 @@ body{
 header{
     border:5px #747171;
     padding:0 1rem;
+    font-size: 0.875rem;
+    font-weight: bold;
     display:flex;
     height: 4rem;
     align-items: center;
     justify-content: space-between;
     font-size: 500;
+    font-weight: bold;
     font-family: 'Roboto', sans-serif;
 }
 .ustlogo {
@@ -36,15 +39,16 @@ header{
     align-items: center;
 }
 .headernavigation li:hover {
-    border-bottom: 0.2rem solid  #36c8ea;;
+    color:#006e74;
+    border-bottom: 0.2rem solid;
 }
 .headernavigation li {
     width: 10rem; 
     text-align: center;
 }
 .headernavimages {
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 0.875rem;
+    font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.43;
@@ -61,10 +65,11 @@ nav{
 }
 nav a {
     text-decoration: none;
-    color: #36c8ea;
+    color:#006e74;
     background-color: white;
     align-items: center;
-    font-size:500;
+    font-size: 0.875rem;
+    font-weight: bold;
 }
 nav ul {
     height:100%;
@@ -78,8 +83,7 @@ nav li {
     display:flex;
     justify-content: center;
     height:100%;
-    border-left: 1px solid#747171;
-    border-color: 1px solid #747171;
+    border-left: 0.02rem solid #EFF2F6;
     background-color: white;
     align-items: center;
 }
@@ -92,19 +96,20 @@ nav li {
     border-left: none;
 }
 .warning:hover {
-    color: #36c8ea;
+    color:#006e74;
 }
 .notification {
     border-left: none;
 }
 .notification:hover {
-    color: #36c8ea;
+    color:#006e74;
 }
 .profile{
         float: right;
         border-radius: 15px;
 }
 .bodyhead{
+    height:6rem;
     padding-bottom: 1rem;
     display: flex;
     justify-content: space-evenly;
@@ -112,9 +117,11 @@ nav li {
     background-color: #f2f4f8;
 }
 .mainbodycontainer{
-    height:calc(100vh - 4rem);
+    height:calc(100vh - 6rem);
     background-color: #f2f4f8;
     padding:1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
 }
 .overview-card{
     padding: 10px;
@@ -137,15 +144,20 @@ nav li {
     align-items: center;
     justify-content: flex-end;
 }
+.lastdays{
+    font-size:small;
+    color:#7c8089;
+    margin-left:3px;
+}
 .texttop{
     margin-top: 10px;
     font-weight: 500;
     display: flex;
-    font-size: medium;
+    color:#666666;
 }
 .texttop img {
-    padding-top: 3px;
-    padding-left: 7px;
+    padding-left: 5px;
+    padding-bottom: 3px;
 }
 .textbottom {
     display: flex;
@@ -170,11 +182,13 @@ nav li {
 .inside {
     display: flex;
     color: #666;
-    font-weight: bolder;
+    font-size: 0.875rem;
+    font-weight: 500;
 }
 .smalltext {
     display: flex;
-    color: #666;
+    color:#7c8089;
+    font-weight: bold;
     justify-content: space-between;
 }
 
@@ -241,14 +255,14 @@ nav li {
 .bodynavigation a:hover {
     color: #36c8ea;
 }
-.viewshipment{
+.viewshipment-desktop{
     display: flex;
     color: #36c8ea;
     font-size:0.75rem;
     font-weight: 500;
     align-items: center;
 }
-.viewshipment:hover{
+.viewshipment-desktop:hover{
    text-decoration: underline;
 }
 .bodytabs{
@@ -258,6 +272,7 @@ nav li {
     padding: 0.625rem 1.25rem;
     font-size: 1rem;
     font-weight: 500;
+    color: #2f3749;
     
 }
 .arrowimages {
@@ -297,6 +312,7 @@ nav li {
 }
 
 .bodybottom{
+    height:calc(100vh - 7rem);
     display:flex;
     justify-content: space-between;
 }
@@ -318,7 +334,9 @@ nav li {
     height: 2.5rem;
     background-color: #f8f9fb;
 }
-
+.hambugericon{
+    display: none;
+}
 .riskheader {
     display: flex;
     justify-content: space-between;
@@ -346,13 +364,12 @@ nav li {
     grid-template-columns: repeat(2,1fr);
     grid-gap: 1rem;
     width: 100%;
-    height:20rem;
+    height:22rem;
 }
 .card{
     background-color: white;
     color: black;
-    padding: 1.5rem;
-    padding-bottom: 1rem;
+    padding: 1.3rem 1rem;
 }
 .shipmentcard{
     color: black;
@@ -382,33 +399,98 @@ nav li {
     display: flex;
     background-color: #f2f4f8;
     align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
 }
-.uparrow{
-    padding:1.175rem 0.937rem;
-}
-.downarrow{
-    padding:1.175rem 1rem 1.175rem 10.188rem;
-}
-.place1{
+.arrow{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    color:gray;
-}
-.place2{
-    align-items: center;
-    color:gray;
+    gap: 14px;
 }
 b{
+    margin-top:3px;
     color: black;
 }
 .lefttext{
     display: flex;
+    justify-content: space-between;
     color: grey;
     padding: 1.25rem 0.25rem;
 }
-.righttext{
+/* .righttext{
     padding-left:10rem;
-}
+} */
 .footer{
     display: flex;
     justify-content: space-between;
+}
+
+.viewshipment {
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .mainbodycontainer {
+        padding: 0;
+    }
+    .hambugericon{
+        display: block;
+        width: 24px;
+        height: 24px;
+    }
+
+    .hambugericon img {
+        height: 100%;
+        width: 100%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .bodyhead {
+        width: auto;
+        overflow-x: scroll;
+    }
+
+    .bodybottom {
+        flex-direction: column;
+    }
+
+    .bodyleftside {
+        width: auto;
+        margin: 1rem;
+    }
+    .bodyrightside {
+        width: auto;
+        box-shadow: 0 -5px 20px 0 rgba(183, 194, 210, 0.3);
+    }
+
+    .tabscontainer {
+        overflow-x: scroll;
+    }
+
+    .headtabs {
+        padding: 0.5rem 0.8rem;
+    }
+
+    .viewshipment-desktop {
+        display: none;
+    }
+
+    .viewshipment {
+        display: block;
+        white-space: nowrap;
+    }
+
+    .bottomcards {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-name {
+        display: none;
+    }
 }

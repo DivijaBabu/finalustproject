@@ -24,7 +24,7 @@
                 <li><img class="headernavimages" src="images/reports.png" alt="REPORTS" /><a href="#">Reports</a></li>
                 <li><img class="headernavimages" src="images/contoltower.png" alt="CONTROLTOWER" /><a href="#">Control
                         Tower</a></li>
-                <li style="border-right: 0.02rem #000000;"><img class="headernavimages" src="images/actionpanel.png"
+                <li style="border-right: 0.02rem  #EFF2F6;"><img class="headernavimages" src="images/actionpanel.png"
                         alt="ACTIONPANEL " /><a href="#">Action Panel</a> </li>
             </ul>
         </nav>
@@ -33,11 +33,13 @@
                     alt="WARNING" /></div>
             <div style="margin-right:15px;align-items: center;"><img class="notification" src="images/notification.png"
                     alt="NOTIFICATION" /></div>
-            <div style="text-align:center;margin-right:15px;">DHIVIJABABU</div>
+            <div style="text-align:center;margin-right:15px;font-weight: 500;" class="profile-name">DHIVIJABABU</div>
             <div><img class="profile" src="images/profile.png" width="30px" height="30px" alt="profile_pic" /></div>
+            <div class="hambugericon"><img src="images/hambuger.png" alt="icon"></div>
         </div>
     </header>
     <div class="mainbodycontainer">
+        
         <div class="bodyhead">
             <div class="overview-card">
                 <div class="text">
@@ -68,7 +70,7 @@
                         <img src="images/info@2x.png" alt="info" width="20px" height="20px">
                     </div>
                     <div class="textbottom2">97%
-                        <div style="font-size:small;color:gray;margin-left:3px;">Last 7 days</div>
+                        <div class="lastdays">Last 7 days</div>
                     </div>
                 </div>
                 <div class="image">
@@ -115,7 +117,8 @@
                             <div class="headtabs"><a href="#">Outbound</a></div>
                             <div class="headtabs"><a href="#">WatchList</a></div>
                         </div>
-                        <div class="viewshipment">view all shipments<img  src="images/arrow.png" alt="arrow"></div>
+                        <div class="viewshipment-desktop">view all shipments<img  src="images/arrow.png" alt="arrow"></div>
+                        <div class="viewshipment">view all<img  src="images/arrow.png" alt="arrow"></div>
                     </div>
                     <div class="tabscontainer">
                             <div class="tab  active">All <span>(25)</span></div>
@@ -146,20 +149,20 @@
                             </div>
                         <br>
                             <div class="contentcard">
-                                <div class="uparrow"><img src="images/uparrow.png" alt="uparrow">
+                                <div class="arrow">
+                                    <div><img src="images/uparrow.png" alt="uparrow"></div>
+                                    <div><p>Origin<br></p><b><span>Sikkim,INDIA</span></b> </div>
                                 </div>
-                                <div class="place1"><p>Origin<br></p><b><span>Sikkim,INDIA</span></b> 
-                                </div>
-                                <div class="downarrow"><img src="images/downarrow.png" alt="downarrow">
-                                </div>
-                                <div class="place2"><p>Destination<br></p><b> <span>Seattle, USA</span></b>
+                                <div class="arrow">
+                                    <div><img src="images/downarrow.png" alt="downarrow"></div>
+                                    <div><p>Destination<br></p><b> <span>Seattle, USA</span></b></div>
                                 </div>
                             </div>
                             <div class="lefttext">
-                                <div class="text1">
+                                <div>
                                     <p>PO# <br><span><b>661234</b></span></p><br><br><p>Vendor<br><span><b> Bailey</b></span></p>
                                 </div>
-                                <div class="righttext">
+                                <div>
                                     <p>Planned ETA<br><span><b>Jan 27, 2021 03:42 PM EST</b></span></p><br><br>
                                     <p>Current ETA<br><span><b>Jan 31, 2021 10:17 PM EST</b> </span></p>
                                 </div>
@@ -179,26 +182,26 @@
                                 <div style="color:gray;font-size: 0.875rem;"><p>Shipment ID</p><span><b>109669449</b> </span></div>
                                 <div class="imagecard">
                                    <div class="imageclass"><img src="images/globe.png" alt="globe"></div>
-                                   <div class="imageclass"><img src="images/aero.png" alt="truck"></div>
+                                   <div class="imageclass"><img src="images/aero.png" alt="aeroplane"></div>
                                    <div class="imageclass"><div class="ontime">ON TIME</div></div>
                                 </div>
                             </div>
                         <br>
                             <div class="contentcard">
-                                <div class="uparrow"><img src="images/uparrow.png" alt="uparrow">
+                                <div class="arrow">
+                                    <div><img src="images/uparrow.png" alt="uparrow"></div>
+                                    <div><p>Origin<br></p><b><span>Sikkim,INDIA</span></b> </div>
                                 </div>
-                                <div class="place1"><p>Origin<br></p><b><span>Sikkim,INDIA</span></b> 
-                                </div>
-                                <div class="downarrow"><img src="images/downarrow.png" alt="downarrow">
-                                </div>
-                                <div class="place2"><p>Destination<br></p><b> <span>Seattle, USA</span></b>
+                                <div class="arrow">
+                                    <div><img src="images/downarrow.png" alt="downarrow"></div>
+                                    <div><p>Destination<br></p><b> <span>Seattle, USA</span></b></div>
                                 </div>
                             </div>
                             <div class="lefttext">
-                                <div class="text1">
+                                <div>
                                     <p>PO# <br><span><b>661234</b></span></p><br><br><p>Vendor<br><span><b> Bailey</b></span></p>
                                 </div>
-                                <div class="righttext">
+                                <div>
                                     <p>Planned ETA<br><span><b>Jan 27, 2021 03:42 PM EST</b></span></p><br><br>
                                     <p>Current ETA<br><span><b>Jan 31, 2021 10:17 PM EST</b> </span></p>
                                 </div>
@@ -219,25 +222,25 @@
                                 <div class="imagecard">
                                    <div class="imageclass"><img src="images/globe.png" alt="globe"></div>
                                    <div class="imageclass"><img src="images/ship.png" alt="ship"></div>
-                                   <div class="imageclass"><div class="ontime">ON TIME</div></div>
+                                   <div class="imageclass"><div class="ontime">DELAYED</div></div>
                                 </div>
                             </div>
                         <br>
                             <div class="contentcard">
-                                <div class="uparrow"><img src="images/uparrow.png" alt="uparrow">
+                                <div class="arrow">
+                                    <div><img src="images/uparrow.png" alt="uparrow"></div>
+                                    <div><p>Origin<br></p><b><span>Sikkim,INDIA</span></b> </div>
                                 </div>
-                                <div class="place1"><p>Origin<br></p><b><span>Sikkim,INDIA</span></b> 
-                                </div>
-                                <div class="downarrow"><img src="images/downarrow.png" alt="downarrow">
-                                </div>
-                                <div class="place2"><p>Destination<br></p><b> <span>Seattle, USA</span></b>
+                                <div class="arrow">
+                                    <div><img src="images/downarrow.png" alt="downarrow"></div>
+                                    <div><p>Destination<br></p><b> <span>Seattle, USA</span></b></div>
                                 </div>
                             </div>
                             <div class="lefttext">
-                                <div class="text1">
+                                <div>
                                     <p>PO# <br><span><b>661234</b></span></p><br><br><p>Vendor<br><span><b> Bailey</b></span></p>
                                 </div>
-                                <div class="righttext">
+                                <div>
                                     <p>Planned ETA<br><span><b>Jan 27, 2021 03:42 PM EST</b></span></p><br><br>
                                     <p>Current ETA<br><span><b>Jan 31, 2021 10:17 PM EST</b> </span></p>
                                 </div>
@@ -256,27 +259,27 @@
                             <div class="shipmentcard">
                                 <div style="color:gray;font-size: 0.875rem;"><p>Shipment ID</p><span><b>109669449</b> </span></div>
                                 <div class="imagecard">
-                                   <div class="imageclass"><img src="images/shipmentcube.png" alt="cube"></div>
-                                   <div class="imageclass"><img src="images/train.png" alt="train"></div>
+                                   <div class="imageclass"><img src="images/globe.png" alt="globe"></div>
+                                   <div class="imageclass"><img src="images/truck.png" alt="truck"></div>
                                    <div class="imageclass"><div class="ontime">ON TIME</div></div>
                                 </div>
                             </div>
                         <br>
                             <div class="contentcard">
-                                <div class="uparrow"><img src="images/uparrow.png" alt="uparrow">
+                                <div class="arrow">
+                                    <div><img src="images/uparrow.png" alt="uparrow"></div>
+                                    <div><p>Origin<br></p><b><span>Sikkim,INDIA</span></b> </div>
                                 </div>
-                                <div class="place1"><p>Origin<br></p><b><span>Sikkim,INDIA</span></b> 
-                                </div>
-                                <div class="downarrow"><img src="images/downarrow.png" alt="downarrow">
-                                </div>
-                                <div class="place2"><p>Destination<br></p><b> <span>Seattle, USA</span></b>
+                                <div class="arrow">
+                                    <div><img src="images/downarrow.png" alt="downarrow"></div>
+                                    <div><p>Destination<br></p><b> <span>Seattle, USA</span></b></div>
                                 </div>
                             </div>
                             <div class="lefttext">
-                                <div class="text1">
+                                <div>
                                     <p>PO# <br><span><b>661234</b></span></p><br><br><p>Vendor<br><span><b> Bailey</b></span></p>
                                 </div>
-                                <div class="righttext">
+                                <div>
                                     <p>Planned ETA<br><span><b>Jan 27, 2021 03:42 PM EST</b></span></p><br><br>
                                     <p>Current ETA<br><span><b>Jan 31, 2021 10:17 PM EST</b> </span></p>
                                 </div>
@@ -290,6 +293,8 @@
                                 <img src="images/image6.png" alt="image6">
                             </div>
                         </div>
+
+                        
 
 
 
