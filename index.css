@@ -54,6 +54,7 @@ header{
 .headernavigation li {
     width: 10rem; 
     text-align: center;
+    border-bottom: 0.1rem solid #fff;
 }
 .headernavimages {
     font-family: 'Arboria';
@@ -314,9 +315,10 @@ nav li {
     font-weight: 500;
     font-family: 'Arboria';
     color: #2f3749;   
+    border-bottom: 2px solid #fff;
 }
 .headtabs:hover{
-    border-bottom: 2px solid #006e74;
+    border-color: #006e74;
 }
 .arrowimages {
     font-size: 10px;
@@ -345,8 +347,9 @@ nav li {
     color:#fff;
     background-color: #006e74;
 }
-.active b{
-    color: #fff;
+.tab b{
+    padding-left: 5px;
+    padding-bottom: 5px;
 }
 .bodybottom{
     height:calc(100vh - 11rem);
@@ -355,7 +358,7 @@ nav li {
 }
 .searching {
     display: flex;
-    padding:0 0.625rem 0.625rem 0.625rem;
+    padding-top:0.625rem;
 }
 
 .searchingbutton {
@@ -407,6 +410,7 @@ nav li {
     grid-template-columns: repeat(2,1fr);
     grid-gap: 1.25rem;
     width: 100%;
+    height: 350px;
 }
 .card{
     background-color: white;
@@ -484,11 +488,7 @@ b{
 
 
 /* mobilephones */
-@media (min-width:50px) and (max-width: 700px) {
-    *{
-        padding:0%;
-        margin:0%;
-    }
+@media only screen and (max-width: 700px) {
     ::-webkit-scrollbar{
         width:0.15rem;
         height:0.15rem;
@@ -527,25 +527,40 @@ b{
       }
       .overview-card{
         padding: 0 1rem;
-        /* flex-basis: none; */
+        width: 21rem;
       }
       .overviewcard4{
         flex-basis: none;
+        width: 21rem;
+      }
+      .viewshipment button {
+        border: none;
+        background-color: transparent;
+        padding: 12px 17px 12px 24px;
+        border-radius: 4px;
+        color: #006e74;
+        background-image: url("./images/arrow.png");
+        background-repeat: no-repeat;
+        background-position: right 0px center;
+       }
+      .leftsidebottom{
+        height: 23rem;
       }
       .bodybottom{
-        /* height:100%; */
-        display: grid;
-        grid-template-columns: auto;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
       }
       .bodyleftside{
         margin-right: 0;
-        /* width:100%; */
+        width:100%;
       }
       .bodytabs{
         padding: 0;
       }
       .headtabs{
-        padding: 0.2rem ;
+        padding: 0.625rem ;
+        font-size: 0.8rem;
       }
       .viewshipment-desktop {
         display: none;
@@ -560,7 +575,6 @@ b{
     }
     .tab{
         display: flex;
-        /* column-gap: 0.75rem; */
     }
     .searching{
         padding-top: 5px;
@@ -570,8 +584,21 @@ b{
         flex-direction: column;
         overflow-x: scroll;
     }
+    .bodyrightside{
+        width: 100%;
+    }
 }      
 
+.tabs-container{
+    max-width:700px;
+    overflow:auto;
+    display:flex;
+    white-space: nowrap;
+  }
+
+  .tabs-search-conatiner{
+    padding: 0.625rem;
+  }
 
 /* tablet */
 @media (min-width: 700px) and (max-width:1200px) {
@@ -579,11 +606,14 @@ b{
         padding:0;
         margin:0;
     }
-    nav {
-        display: none;
+    header{
+        padding-top: 0.5rem;
     }
     body{
-        width:100%;
+    width: 100%;
+    }
+    nav {
+        display: none;
     }
  .hambugericon{
     display: block;
@@ -591,13 +621,14 @@ b{
     height: 24px;
     padding-left: 5px;
 }
-.mainbodycontainer{
-    padding:1rem;
-    /* height:auto; */
-}
 .hambugericon img {
     height: 100%;
     width: 100%;
+}
+.mainbodycontainer{
+    padding: 1rem;
+    height: 45rem;
+    overflow-y: scroll;
 }
 .viewshipment-desktop {
     display: none;
@@ -607,6 +638,16 @@ b{
     color:#006e74;
     white-space: nowrap;
 }
+.viewshipment button {
+    border: none;
+    background-color: transparent;
+    padding: 12px 17px 12px 24px;
+    border-radius: 4px;
+    color: #006e74;
+    background-image: url("./images/arrow.png");
+    background-repeat: no-repeat;
+    background-position: right 0px center;
+}
 .bodyhead {
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -614,8 +655,9 @@ b{
     padding-bottom: 1rem;
 }
 .bodybottom{
-    display: grid;
-    overflow-y: scroll;
+    height:100%;
+    display: flex;
+    flex-direction: column;
 }
 .bodyleftside{
     width:100%;
@@ -624,8 +666,9 @@ b{
 .bodyrightside{
     padding-top:1rem;
     width:100%;
-    
+    height:100%;
 }
+
 }
 @media (min-width:1700px) and (max-width:7500px) {
     *{
@@ -636,3 +679,4 @@ b{
     padding-right: 20rem;
   }  
 } 
+
