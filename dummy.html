@@ -1,0 +1,146 @@
+
+/* mobilephones */
+@media only screen and (max-width: 600px) {
+    *{
+        padding:0%;
+        margin:0%;
+    }
+    ::-webkit-scrollbar{
+        width:0.15rem;
+        height:0.15rem;
+    }
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #888; 
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+      .hambugericon{
+        display: block;
+        width: 24px;
+        height: 24px;
+        padding-left: 5px;
+    }
+    .hambugericon img {
+        height: 100%;
+        width: 100%;
+    }
+    .profile-name {
+        display: none;
+    }
+    .mainbodycontainer{
+        padding:1rem;
+        height:auto;
+    }
+    
+      header nav{
+        display: none;
+      }
+      .bodyhead{
+        overflow-x: scroll;
+      }
+      .overview-card{
+      
+        flex-basis: none;
+      }
+      .overviewcard4{
+      
+        flex-basis: none;
+      }
+      .bodybottom{
+        display: grid;
+        grid-template-columns: auto;
+      }
+      .bodyrightside{
+        padding-top: 1rem;
+    width: 100%;
+      }
+      .bodyleftside{
+        width:100%;
+        margin-right: 0;
+      }
+      .headtabs {
+        padding: 0.625rem 0.25rem;
+      }
+      .viewshipment-desktop {
+        display: none;
+    }
+    .viewshipment {
+        display: block;
+        color:#006e74;
+        white-space: nowrap;
+    }
+      .leftsidetop{
+        overflow-x: auto;
+      }
+      .tab{
+        padding:0.25rem;
+      }
+      .leftsidebottom{
+        width:100%;
+      }
+      .bottomcards {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 1rem;
+      }
+      .tab{
+        display: flex;
+      }
+}      
+
+
+/* tablet */
+@media (min-width: 700px) and (max-width:1200px) {
+    *{
+        padding:0;
+        margin:0;
+    }
+    nav {
+        display: none;
+    }
+    body{
+        width:100%;
+    }
+ .hambugericon{
+    display: block;
+    width: 24px;
+    height: 24px;
+    padding-left: 5px;
+}
+.mainbodycontainer{
+    padding:1rem;
+    height:auto;
+}
+.hambugericon img {
+    height: 100%;
+    width: 100%;
+}
+.bodyhead {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 0.704rem;
+    padding-bottom: 1rem;
+}
+.bodybottom{
+    display: grid;
+}
+.bodyleftside{
+    width:100%;
+    margin-right: 0;
+}
+.bodyrightside{
+    padding-top:1rem;
+    width:100%;
+    
+}
+}
+@media (min-width:1700px) and (max-width:7500px) {
+  .mainbodycontainer{
+    padding-left: 20rem;
+    padding-right: 20rem;
+  }  
+} 

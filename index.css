@@ -1,6 +1,7 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 ::-webkit-scrollbar{
     width:0.15rem;
@@ -124,7 +125,7 @@ nav li {
     padding-bottom: 1rem;
 }
 .mainbodycontainer{
-    height:calc(100vh - 6rem);
+    height:calc(100vh - 4rem);
     background-color: #f2f4f8;
     padding:1rem;
     font-size: 0.875rem;
@@ -308,8 +309,7 @@ nav li {
     font-size: 1rem;
     font-weight: 500;
     font-family: 'Arboria';
-    color: #2f3749;
-    
+    color: #2f3749;   
 }
 .headtabs:hover{
     border-bottom: 2px solid #006e74;
@@ -350,7 +350,7 @@ nav li {
     color:#f62020;
 }
 .bodybottom{
-    height:calc(100% - 7rem);
+    height:calc(100% - 6rem);
     display:flex;
     justify-content: space-between;
 }
@@ -380,12 +380,14 @@ nav li {
     justify-content: space-between;
     padding: 0.625rem 1.25rem;
     background-color: white;
+    height: 3rem;
 }
 .riskcontent {
     font-family: 'Arboria-light';
     align-items: center;
     background-color: #f8f9fb;
     padding:0.625rem;
+    height: calc(100% - 3rem);
 }
 .riskcontent p{
     font-weight: 100;
@@ -396,11 +398,12 @@ nav li {
     font-weight: 500;
 }
 .leftsidebottom{
-        overflow-y: scroll;
+        overflow-y: auto;
         width: 100%;
         margin-top: 1rem;
         background-color: #f2f4f8;
         padding-bottom:1rem;
+        height: calc(100% - 11rem);
 }
 .bottomcards{
     display: grid;
@@ -478,8 +481,14 @@ b{
     display: none;
 }
 
+
+
+
+
+
+
 /* mobilephones */
-@media only screen and (max-width: 600px) {
+@media (min-width:50px) and (max-width: 700px) {
     *{
         padding:0%;
         margin:0%;
@@ -510,11 +519,14 @@ b{
     .profile-name {
         display: none;
     }
+    body{
+        width:100%;
+    }
     .mainbodycontainer{
         padding:1rem;
         height:auto;
-    }
-    
+        width:100%;
+    }    
       header nav{
         display: none;
       }
@@ -522,29 +534,30 @@ b{
         overflow-x: scroll;
       }
       .overview-card{
-        width:310px;
+        width: 326px;
+        padding: 0 1rem;
         flex-basis: none;
       }
       .overviewcard4{
-        width:310px;
+        width:326px;
         flex-basis: none;
       }
       .bodybottom{
         display: grid;
         grid-template-columns: auto;
       }
-      .bodyrightside{
-        width: 98%;
-        padding-top: 1rem;
-      }
       .bodyleftside{
-        width:55%;
+        width:50%;
+        margin-right: 0;
       }
-      .headtabs {
-        padding: 0.625rem 0.25rem;
+      .leftsidetop{
+        width:95%;
       }
       .bodytabs{
-        width:255px;
+        padding: 0;
+      }
+      .headtabs{
+        padding: 0.2rem ;
       }
       .viewshipment-desktop {
         display: none;
@@ -554,23 +567,30 @@ b{
         color:#006e74;
         white-space: nowrap;
     }
-      .leftsidetop{
+    .tabscontainer{
+        width:100%;
         overflow-x: scroll;
-        width: 327px;
-      }
-      .tab{
-        padding:0.25rem;
-      }
-      .leftsidebottom{
-        width:181%;
-      }
-      .bottomcards {
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        grid-gap: 1rem;
-      }
-      .tab{
+    }
+    .tab{
         display: flex;
+        column-gap: 0.75rem;
+    }
+    .searching{
+        padding-top: 5px;
+    }
+    .leftsidebottom{
+        width: 98%;
+    }
+    .bottomcards{
+        display: flex;
+        flex-direction: column;
+        overflow-x: scroll;
+    }
+    .card{
+        width:97%;
+    }
+    .bodyrightside{
+        width:50%;
       }
 }      
 
@@ -601,6 +621,14 @@ b{
     height: 100%;
     width: 100%;
 }
+.viewshipment-desktop {
+    display: none;
+}
+.viewshipment {
+    display: block;
+    color:#006e74;
+    white-space: nowrap;
+}
 .bodyhead {
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -612,10 +640,12 @@ b{
 }
 .bodyleftside{
     width:100%;
+    margin-right: 0;
 }
 .bodyrightside{
     padding-top:1rem;
     width:100%;
+    
 }
 }
 @media (min-width:1700px) and (max-width:7500px) {
@@ -623,4 +653,4 @@ b{
     padding-left: 20rem;
     padding-right: 20rem;
   }  
-}
+} 
