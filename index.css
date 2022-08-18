@@ -44,9 +44,12 @@ header{
     display: flex;
     align-items: center;
 }
+.headernavigation ul{
+    box-sizing: border-box;
+}
 .headernavigation li:hover {
     color:#006e74;
-    border-bottom: 0.2rem solid;
+    border-bottom: 0.1rem solid;
 }
 .headernavigation li {
     width: 10rem; 
@@ -148,6 +151,7 @@ nav li {
     background-color: white;
     height: 4.5rem;
     flex-basis: 25%;
+    align-items: center;
     font-family: 'Arboria';
     justify-content: space-between;
 }
@@ -165,7 +169,7 @@ nav li {
     justify-content: flex-end;
 }
 .imagecard4 {
-    padding: 17px 2px 0px 5px;
+    padding: 9px 2px 4px 9px;
     width: 15%;
     border: 1px;
     margin-left: 7px;
@@ -305,7 +309,7 @@ nav li {
     display:flex;
 }
 .headtabs{
-    padding: 0.625rem 1.25rem;
+    padding: 0.81rem;
     font-size: 1rem;
     font-weight: 500;
     font-family: 'Arboria';
@@ -325,13 +329,12 @@ nav li {
     padding:0.625rem;
 }
 .tab{
-    padding:0.75rem 1rem;
+    padding:0.5rem;
     background-color: #f8f9fb;
     align-items: center;
-    margin-right: 5px;
+    margin-right: 0.625rem;
     color:#7c8089;
     cursor: pointer;
-    border-radius: 2px;
     font-size: 0.875rem;
 }
 .tab:hover{
@@ -342,15 +345,11 @@ nav li {
     color:#fff;
     background-color: #006e74;
 }
-
-.count{
-    color: #000;
-}
-.redalert{
-    color:#f62020;
+.active b{
+    color: #fff;
 }
 .bodybottom{
-    height:calc(100% - 6rem);
+    height:calc(100vh - 11rem);
     display:flex;
     justify-content: space-between;
 }
@@ -361,7 +360,6 @@ nav li {
 
 .searchingbutton {
     border: none;
-    height: 2.5rem;
     background: #f8f9fb;
     padding: 0 0.625rem;
 }
@@ -369,7 +367,7 @@ nav li {
 .searchingbox {
     border: #f8f9fb;
     width: 100%;
-    height: 2.5rem;
+    height: 2rem;
     background-color: #f8f9fb;
 }
 .hambugericon{
@@ -378,16 +376,15 @@ nav li {
 .riskheader {
     display: flex;
     justify-content: space-between;
-    padding: 0.625rem 1.25rem;
-    background-color: white;
-    height: 3rem;
+    padding:0.625rem 1.25rem;
+    background-color: white
 }
 .riskcontent {
     font-family: 'Arboria-light';
     align-items: center;
     background-color: #f8f9fb;
     padding:0.625rem;
-    height: calc(100% - 3rem);
+    height: calc(100% - 4rem);
 }
 .riskcontent p{
     font-weight: 100;
@@ -408,14 +405,13 @@ nav li {
 .bottomcards{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-gap: 1rem;
+    grid-gap: 1.25rem;
     width: 100%;
-    height:21rem;
 }
 .card{
     background-color: white;
     color: black;
-    padding: 1.3rem 1rem;
+    padding:1.625rem;
 }
 .shipmentcard{
     color: black;
@@ -433,14 +429,14 @@ nav li {
     height:1rem;
 }
 .ontime{
-    height: 1rem;
+    height: 1.5rem;
     background-color: #e7f4ff;
     color: #017cee;
     font-size: 0.7rem;
     font-weight: bold;
     font-family: 'Arboria';
     padding: 0.25rem;
-    padding-top: 0.4rem; 
+    padding-top: 0.3rem; 
 }
 .contentcard{
     display: flex;
@@ -519,14 +515,10 @@ b{
     .profile-name {
         display: none;
     }
-    body{
-        width:100%;
-    }
     .mainbodycontainer{
         padding:1rem;
         height:auto;
-        width:100%;
-    }    
+    }
       header nav{
         display: none;
       }
@@ -534,12 +526,10 @@ b{
         overflow-x: scroll;
       }
       .overview-card{
-        width: 326px;
         padding: 0 1rem;
         flex-basis: none;
       }
       .overviewcard4{
-        width:326px;
         flex-basis: none;
       }
       .bodybottom{
@@ -547,11 +537,7 @@ b{
         grid-template-columns: auto;
       }
       .bodyleftside{
-        width:50%;
         margin-right: 0;
-      }
-      .leftsidetop{
-        width:95%;
       }
       .bodytabs{
         padding: 0;
@@ -568,30 +554,20 @@ b{
         white-space: nowrap;
     }
     .tabscontainer{
-        width:100%;
         overflow-x: scroll;
     }
     .tab{
         display: flex;
-        column-gap: 0.75rem;
+        /* column-gap: 0.75rem; */
     }
     .searching{
         padding-top: 5px;
-    }
-    .leftsidebottom{
-        width: 98%;
     }
     .bottomcards{
         display: flex;
         flex-direction: column;
         overflow-x: scroll;
     }
-    .card{
-        width:97%;
-    }
-    .bodyrightside{
-        width:50%;
-      }
 }      
 
 
