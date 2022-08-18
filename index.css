@@ -527,17 +527,19 @@ b{
       }
       .overview-card{
         padding: 0 1rem;
-        flex-basis: none;
+        /* flex-basis: none; */
       }
       .overviewcard4{
         flex-basis: none;
       }
       .bodybottom{
+        /* height:100%; */
         display: grid;
         grid-template-columns: auto;
       }
       .bodyleftside{
         margin-right: 0;
+        /* width:100%; */
       }
       .bodytabs{
         padding: 0;
@@ -591,7 +593,7 @@ b{
 }
 .mainbodycontainer{
     padding:1rem;
-    height:auto;
+    /* height:auto; */
 }
 .hambugericon img {
     height: 100%;
@@ -613,6 +615,7 @@ b{
 }
 .bodybottom{
     display: grid;
+    overflow-y: scroll;
 }
 .bodyleftside{
     width:100%;
@@ -625,6 +628,9 @@ b{
 }
 }
 @media (min-width:1700px) and (max-width:7500px) {
+    *{
+        font-size:20px;
+    }
   .mainbodycontainer{
     padding-left: 20rem;
     padding-right: 20rem;
