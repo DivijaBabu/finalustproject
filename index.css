@@ -387,7 +387,11 @@ nav li {
     padding: 0 0.625rem;
 }
 
+.searchingmob{
+    display: none;
+}
 .searchingbox {
+    outline: none;
     border: #f8f9fb;
     width: 100%;
     height: 2rem;
@@ -408,6 +412,9 @@ nav li {
     background-color: #f8f9fb;
     padding:2rem;
     height: calc(100% - 3rem);
+}
+.vendoring{
+    display: none;
 }
 .riskcontent p{
     font-weight: 100;
@@ -498,6 +505,18 @@ b{
 .viewshipment {
     display: none;
 }
+
+.tabs-container{
+    max-width:700px;
+    overflow:auto;
+    display:flex;
+    white-space: nowrap;
+  }
+
+  .tabs-search-conatiner{
+    padding: 0.625rem;
+  }
+
 
 
 
@@ -591,10 +610,17 @@ b{
     .tabscontainer{
         overflow-x: scroll;
     }
+    .searching{
+        display:none;
+    }
+    .searchingmob {
+        display: flex;
+        padding-top:0.625rem;
+    }
     .tab{
         display: flex;
     }
-    .searching{
+    .searchingmob{
         padding-top: 5px;
     }
     .bottomcards{
@@ -603,21 +629,21 @@ b{
         overflow-x: scroll;
     }
     .riskcontainer{
+        margin-top: 1.5rem;
         width: 100%;
     }
+    .vendoring{
+        display: flex;
+        justify-content: space-around;
+        column-gap:55px;
+    }
+    .vendor{
+        display: none;
+    }
+    .planned{
+        display:none;
+    }
 }      
-
-.tabs-container{
-    max-width:700px;
-    overflow:auto;
-    display:flex;
-    white-space: nowrap;
-  }
-
-  .tabs-search-conatiner{
-    padding: 0.625rem;
-  }
-
 /* tablet */
 @media (min-width: 700px) and (max-width:1200px) {
     *{
@@ -676,6 +702,7 @@ b{
     height:100%;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
 }
 .shipmentcardcontainer{
     height: 23rem;
@@ -691,13 +718,62 @@ b{
 }
 
 }
-@media (min-width:1700px) and (max-width:7500px) {
+@media screen and (max-width:300px){
+    .overview-card{
+        width:15rem;
+    }
+    .headtabs1, .headtabs {
+        padding: 0.2rem;
+    }
+    .viewshipment button{
+    padding: 12px 25px 12px 7px;
+    align-items: center;
+    background-position: right 11px center;
+    }
+    .card{
+        padding:0.5rem;
+    }
+    .ontime{
+        padding:0;
+        padding-top:0.3rem;
+    }
+    .contentcard{
+        padding:0.5rem;
+    }
+}
+@media (min-width:1700px) and (max-width:1920px) {
     *{
-        font-size:20px;
+        font-size:16px;
     }
   .mainbodycontainer{
-    padding-left: 20rem;
-    padding-right: 20rem;
+    padding-left: 15rem;
+    padding-right: 12rem;
   }  
+  .tabs-container {
+   max-width:950px;
+  }
 } 
-
+@media (min-width:1921px){
+    *{
+        font-size:21px;
+    }
+    .riskcontainer{
+        height:59.5rem;
+    }
+    .tabs-container {
+        max-width:990px;
+      }
+      .tab{
+        padding:0.3rem;
+      }
+    .mainbodycontainer{
+        padding-left: 15rem;
+        padding-right: 12rem;
+      }  
+      .shipmentheader{
+        height: 10.5rem;
+      }
+      .riskcontainer{
+        height: 59.2rem;
+      }
+}
