@@ -121,7 +121,7 @@ nav li {
         float: right;
         border-radius: 15px;
 }
-.bodyhead{
+.overviewcontainer{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4,1fr)    ;
@@ -264,14 +264,14 @@ nav li {
     background-color: red;
     border-radius: 50%;
 }
-.bodyrightside {
+.riskcontainer {
     width: 38%;
 }
-.bodyleftside {
+.watchlistcontainer {
     width: 60%;
     margin-right: 2%;
 }
-.leftsidetop {
+.shipmentheader {
     margin-bottom: 1rem;
     border:1rem white;
     justify-content: space-between;
@@ -397,7 +397,7 @@ nav li {
     text-align: center;
     font-weight: 500;
 }
-.leftsidebottom{
+.shipmentcardcontainer{
         overflow-y: auto;
         width: 100%;
         margin-top: 1rem;
@@ -522,7 +522,7 @@ b{
       header nav{
         display: none;
       }
-      .bodyhead{
+      .overviewcontainer{
         overflow-x: scroll;
       }
       .overview-card{
@@ -543,7 +543,7 @@ b{
         background-repeat: no-repeat;
         background-position: right 0px center;
        }
-      .leftsidebottom{
+      .shipmentcardcontainer{
         height: 23rem;
       }
       .bodybottom{
@@ -551,7 +551,7 @@ b{
         flex-direction: column;
         height: 100%;
       }
-      .bodyleftside{
+      .watchlistcontainer{
         margin-right: 0;
         width:100%;
       }
@@ -584,7 +584,7 @@ b{
         flex-direction: column;
         overflow-x: scroll;
     }
-    .bodyrightside{
+    .riskcontainer{
         width: 100%;
     }
 }      
@@ -648,7 +648,7 @@ b{
     background-repeat: no-repeat;
     background-position: right 0px center;
 }
-.bodyhead {
+.overviewcontainer {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-gap: 0.704rem;
@@ -659,11 +659,11 @@ b{
     display: flex;
     flex-direction: column;
 }
-.bodyleftside{
+.watchlistcontainer{
     width:100%;
     margin-right: 0;
 }
-.bodyrightside{
+.riskcontainer{
     padding-top:1rem;
     width:100%;
     height:100%;
