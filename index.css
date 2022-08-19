@@ -305,7 +305,7 @@ nav li {
     font-family: 'Arboria';
     align-items: center;
 }
-.viewshipment-desktop:hover{
+.viewshipment-deskt3op:hover{
     cursor: pointer;
    text-decoration: underline;
 }
@@ -576,7 +576,7 @@ b{
       .bodytabs{
         padding: 0;
       }
-      .headtabs{
+      .headtabs1 , .headtabs{
         padding: 0.625rem ;
         font-size: 0.8rem;
       }
