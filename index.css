@@ -757,9 +757,9 @@ b{
     *{
         font-size:21px;
     }
-    .riskcontainer{
+     .riskcontainer{
         height:59.5rem;
-    }
+    } 
     .tabs-container {
         max-width:990px;
       }
@@ -773,7 +773,7 @@ b{
       .shipmentheader{
         height: 10.5rem;
       }
-      .riskcontainer{
-        height: 59.2rem;
-      }
+      /* .riskcontainer{
+        height: auto;
+      } */
 }
