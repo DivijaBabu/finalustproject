@@ -31,6 +31,9 @@
 body{
     height:100vh;
 }
+.headerbar{
+    display:none;
+}
 header{
     border:5px #747171;
     padding:0 1rem;
@@ -46,6 +49,11 @@ header{
 .ustlogo {
     display: flex;
     align-items: center;
+}
+.ustlogoalter {
+    display: flex;
+    align-items: center;
+    padding:1rem;
 }
 .headernavigation ul{
     box-sizing: border-box;
@@ -66,6 +74,7 @@ header{
     font-size: 0.875rem;
     color: #d3d3d3;
     margin-right: 5px;
+    border-right: 0.02rem  #EFF2F6;
 }
 nav{
     display: flex;
@@ -106,9 +115,13 @@ nav li {
 }
 .warning {
     border-left: none;
+    margin-right:15px;
+    align-items: center;
 }
 .notification {
     border-left: none;
+    margin-right:15px;
+    align-items: center;
 }
 .profile-name{
     text-align:center;
@@ -527,6 +540,12 @@ b{
       ::-webkit-scrollbar-thumb:hover {
         background: #555;
       }
+      .headerbar{
+        display:block;
+    }
+    header{
+        display: none;
+    }
       .icons i {
         display: inline-block;
         padding: 12px;
@@ -534,7 +553,7 @@ b{
    .overviewcontainer::-webkit-scrollbar{
         display:none;
     }
-      .hambugericon{
+    /* .hambugericon{
         display: block;
         width: 24px;
         height: 24px;
@@ -543,7 +562,7 @@ b{
     .hambugericon img {
         height: 100%;
         width: 100%;
-    } 
+    }  */
     .profile-name {
         display: none;
     }
@@ -551,9 +570,9 @@ b{
         padding:1rem;
         height:auto;
     }
-      header nav{
+      /* header nav{
         display: none;
-      }
+      } */
       .overviewcontainer{
         overflow-x: scroll;
       }
@@ -702,7 +721,13 @@ b{
     body{
     width: 100%;
     }
-    nav {
+    .headerbar{
+        display:block;
+    }
+    header{
+ display: none;
+    }
+    /* nav {
         display: none;
     }
     .hambugericon{
@@ -714,7 +739,7 @@ b{
     .hambugericon img {
         height: 100%;
         width: 100%;
-    }
+    } */
 .mainbodycontainer{
     padding: 1rem;
     height: 100%;
