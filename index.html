@@ -7,18 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UST PROJECT</title>
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="index.js" defer></script>
 </head>
 
 <body>
 
     <header>
         <div class="ustlogo"><img src="images/UST Omni (non-optimized).png" alt="OMNILOGO" /></div>
-        <nav class= "headernavigation">
+        <nav class="headernavigation">
             <ul>
-                <li class="activedash"><img class="headernavimages" src="images/Home.jpg" alt="DASHBOARD"/><a href="#">Dashboard</a></li>
-                <li><img class="headernavimages" src="images/Shipment_Mgmt.png" alt="SHIPMENT" /><a href="#">Shipments</a></li>
+                <li class="activedash"><img class="headernavimages" src="images/Home.jpg" alt="DASHBOARD" /><a
+                        href="#">Dashboard</a></li>
+                <li><img class="headernavimages" src="images/Shipment_Mgmt.png" alt="SHIPMENT" /><a
+                        href="#">Shipments</a></li>
                 <li><img class="headernavimages" src="images/reports.png" alt="REPORTS" /><a href="#">Reports</a></li>
-                <li><img class="headernavimages" src="images/contoltower.png" alt="CONTROLTOWER" /><a href="#">Control Tower</a></li>
+                <li><img class="headernavimages" src="images/contoltower.png" alt="CONTROLTOWER" /><a href="#">Control
+                        Tower</a></li>
                 <li style="border-right: 0.02rem  #EFF2F6;"><img class="headernavimages" src="images/actionpanel.png"
                         alt="ACTIONPANEL " /><a href="#">Action Panel</a> </li>
             </ul>
@@ -30,15 +35,16 @@
                     alt="NOTIFICATION" /></div>
             <div class="profile-name">DHIVIJABABU</div>
             <div><img class="profile" src="images/profile.png" width="30px" height="30px" alt="profile_pic" /></div>
-            <div class="hambugericon"><img src="images/hambuger.png" alt="icon"></div>
+            <div class="hambugericon">
+                <img src="images/hambuger.png" alt="hambugericon">
+            </div>
         </div>
     </header>
     <div class="mainbodycontainer">
-        <div class="overviewcontainer">
-            <!-- <div class="scroller"> -->
-                <!-- <span class="btn prev">&lt;</span> -->
-                <!-- <span class="btn next">&gt;</span> -->
-            <div class="overview-card">
+        <div class="overviewcontainer" data-carousel>
+            <button class="btn prev" data-carousel-button="prev">&lt;</button>
+            <button class="btn next" data-carousel-button="next">&gt;</button>
+            <div class="overview-card" data-slides data-active>
                 <div class="text">
                     <div class="texttop">
                         Action to Take
@@ -50,7 +56,7 @@
                 </div>
                 <div class="image"><img src="images/check-circle.png" alt="info"></div>
             </div>
-            <div class="overview-card">
+            <div class="overview-card" data-slides>
                 <div class="text">
                     <div class="texttop">Pending Approvals
                         <img src="images/info@2x.png" alt="info" width="22px" height="20px">
@@ -61,7 +67,7 @@
                     <img src="images/clock.png" alt="info">
                 </div>
             </div>
-            <div class="overview-card">
+            <div class="overview-card" data-slides>
                 <div class="text">
                     <div class="texttop">Delivery in Full
                         <img src="images/info@2x.png" alt="info" width="22px" height="20px">
@@ -74,7 +80,7 @@
                     <img src="images/delivery.png" alt="info">
                 </div>
             </div>
-            <div class="overview-card">
+            <div class="overview-card" data-slides>
                 <div class="text">
                     <div class="inside">
                         <div>Inbound Freight as % of COGS<br></div>
@@ -82,30 +88,37 @@
                             height="15px">
                     </div>
                     <div class="smalltext">
-                        <div><p>Frozen</p><div class="color1"></div>5%</div>
-                        <div><p>Pershable</p><div class="color2"></div>3%</div>
-                        <div><p>Fresh</p>
+                        <div>
+                            <p>Frozen</p>
+                            <div class="color1"></div>5%
+                        </div>
+                        <div>
+                            <p>Pershable</p>
+                            <div class="color2"></div>3%
+                        </div>
+                        <div>
+                            <p>Fresh</p>
                             <div class="color3"></div>6%
                         </div>
-                        <div><p>Dry</p>
+                        <div>
+                            <p>Dry</p>
                             <div class="color4"></div>10%
                         </div>
                     </div>
                 </div>
                 <div class="imagecard4"><img src="images/cubegoods.png" alt="cube" width="43px"></div>
             </div>
-        <!-- </div> -->
         </div>
 
-    
+
         <div class="bodybottom">
             <div class="watchlistcontainer">
                 <div class="shipmentheader">
                     <div class="bodynavigation">
                         <div class="bodytabs">
-                             <div class="headtabs1"><a href="#">Inbound</a></div>
-                             <div class="headtabs"><a href="#">Outbound</a></div>
-                             <div class="headtabs"><a href="#">WatchList</a></div>
+                            <div class="headtabs1"><a href="#">Inbound</a></div>
+                            <div class="headtabs"><a href="#">Outbound</a></div>
+                            <div class="headtabs"><a href="#">WatchList</a></div>
                         </div>
                         <div class="viewshipment-desktop">
                             view all shipments<img src="images/arrow.png" alt="arrow">
@@ -119,7 +132,7 @@
                             <div class="tab">
                                 Delayed <b style="color: red;">(10)</b>
                             </div>
-                          
+
                             <div class="tab">
                                 Early <b>(6)</b>
                             </div>
@@ -132,8 +145,8 @@
                             <div class="tab">
                                 On Time <b>(7)</b>
                             </div>
-                            
-                          </div>
+
+                        </div>
                         <div class="searching">
                             <button class="searchingbutton">
                                 <img src="images/search.png" alt="search">
@@ -145,11 +158,10 @@
                             <button class="searchingbutton">
                                 <img src="images/search.png" alt="search">
                             </button>
-                            <input type="searchbox" class="searchingbox"
-                                placeholder="Search by:"></input>
+                            <input type="searchbox" class="searchingbox" placeholder="Search by:"></input>
                         </div>
                     </div>
-              
+
                 </div>
                 <div class="shipmentcardcontainer">
                     <div class="bottomcards">

@@ -40,6 +40,7 @@ header{
     align-items: center;
     justify-content: space-between;
 }
+
 .ustlogo {
     display: flex;
     align-items: center;
@@ -52,10 +53,6 @@ header{
     color:#006e74;
     border-bottom: 0.1rem solid;
 }
-.activedash{
-    
-}
-
 
 .headernavigation li {
     width: 10rem; 
@@ -124,6 +121,7 @@ nav li {
 .overviewcontainer{
     width: 100%;
     display: grid;
+    position: relative;
     grid-template-columns: repeat(4,1fr)    ;
     grid-gap: 0.704rem;
     padding-bottom: 1rem;
@@ -135,6 +133,9 @@ nav li {
     font-size: 0.875rem;
     font-family: 'Arboria';
     font-weight: 500;
+}
+.overviewcontainer button{
+    display:none;
 }
 .overview-card{
     padding: 0.75rem;
@@ -502,7 +503,6 @@ b{
 
 
 
-
 /* mobilephones */
 @media only screen and (max-width: 700px) {
     ::-webkit-scrollbar{
@@ -518,6 +518,11 @@ b{
       ::-webkit-scrollbar-thumb:hover {
         background: #555;
       }
+      .icons i {
+        display: inline-block;
+        padding: 12px;
+      }
+   
       .hambugericon{
         display: block;
         width: 24px;
@@ -527,7 +532,7 @@ b{
     .hambugericon img {
         height: 100%;
         width: 100%;
-    }
+    } 
     .profile-name {
         display: none;
     }
@@ -541,6 +546,33 @@ b{
       .overviewcontainer{
         overflow-x: scroll;
       }
+      .overviewcontainer button{
+        display: block;
+      }
+      .btn{
+        position: absolute;
+        cursor: pointer;
+        bottom:40%;
+        background-color: #006e74;
+        color: #e9edf2;
+        border: none;
+        align-items: center;
+        border-radius: 15px;
+        padding:0 0.5rem;
+        width:30px;
+        height: 30px;
+    }
+    .btn:hover{
+        background-color: #05abad;
+    }
+    .prev{
+        left:0rem;
+        margin-right: 1rem;
+    }
+    .next{
+        right:0rem;
+        margin-left: 1rem;
+    }
       .overview-card{
         padding: 0 1rem;
         width: 21rem;
@@ -634,16 +666,16 @@ b{
     nav {
         display: none;
     }
- .hambugericon{
-    display: block;
-    width: 24px;
-    height: 24px;
-    padding-left: 5px;
-}
-.hambugericon img {
-    height: 100%;
-    width: 100%;
-}
+    .hambugericon{
+        display: block;
+        width: 24px;
+        height: 24px;
+        padding-left: 5px;
+    }
+    .hambugericon img {
+        height: 100%;
+        width: 100%;
+    }
 .mainbodycontainer{
     padding: 1rem;
     height: 100%;
