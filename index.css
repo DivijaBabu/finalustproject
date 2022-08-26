@@ -16,7 +16,9 @@
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
-
+.overviewscrolling::-webkit-scrollbar{
+    display:none;
+}
   @font-face {
     font-family: 'Arboria';
     src: url('fonts/Arboria-Medium.ttf');
@@ -118,11 +120,14 @@ nav li {
         float: right;
         border-radius: 15px;
 }
+.overviewscrolling{
+    overflow-x: scroll;
+}
 .overviewcontainer{
     width: 100%;
     display: grid;
     position: relative;
-    grid-template-columns: repeat(4,1fr)    ;
+    grid-template-columns: repeat(6,1fr)    ;
     grid-gap: 0.704rem;
     padding-bottom: 1rem;
 }
@@ -137,12 +142,16 @@ nav li {
 .overviewcontainer button{
     display:none;
 }
+.tabs-search-conatiner button{
+    display: none;
+}
 .overview-card{
     padding: 0.75rem;
     display: flex;
     background-color: white;
     height: 5.5rem;
-    flex-basis: 25%;
+    width:23rem;
+    /* flex-basis: 50%; */
     align-items: center;
     font-family: 'Arboria';
     justify-content: space-between;
@@ -318,11 +327,11 @@ nav li {
     display: flex;
     justify-content: space-between;
 }
-.tabscontainer {
+/* .tabscontainer {
     display: flex;
     background-color: white;
     padding:0.625rem;
-}
+} */
 .tab{
     padding:0.5rem;
     background-color: #f8f9fb;
@@ -522,7 +531,9 @@ b{
         display: inline-block;
         padding: 12px;
       }
-   
+   .overviewcontainer::-webkit-scrollbar{
+        display:none;
+    }
       .hambugericon{
         display: block;
         width: 24px;
@@ -549,6 +560,31 @@ b{
       .overviewcontainer button{
         display: block;
       }
+      .tabs-search-conatiner button{
+        display: block;
+    }
+    .btn2{
+        position: absolute;
+        cursor: pointer;
+        background-color:#dce9ea;
+        color: white;
+        font-weight: 700;
+        border: none;
+        align-items: center;
+        padding:0 0.5rem;
+        width:20px;
+        height: 40px;
+        transform: translate(-50%, -50%);
+    }
+    .btn2:hover{
+        background-color: #05abad;
+    }
+    .next2{
+        right:1rem;
+        margin-left: 3rem;
+        border-bottom-left-radius:30px ;
+        border-top-left-radius: 30px;
+    }
       .btn{
         position: absolute;
         cursor: pointer;
@@ -614,9 +650,12 @@ b{
         color:#006e74;
         white-space: nowrap;
     }
-    .tabscontainer{
-        overflow-x: scroll;
+    .tabs-container::-webkit-scrollbar{
+        display:none;
     }
+    /* .tabscontainer{
+        overflow-x: scroll;
+    } */
     .searching{
         display:none;
     }
@@ -680,6 +719,9 @@ b{
     padding: 1rem;
     height: 100%;
     overflow-y: scroll;
+}
+.overview-card{
+    width:100%;
 }
 .viewshipment-desktop {
     display: none;

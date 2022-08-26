@@ -1,14 +1,4 @@
 
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-
-
 const buttons = document.querySelectorAll("[data-carousel-button]")
 buttons.forEach(button => {
     button.addEventListener("click", () => {
@@ -24,4 +14,3 @@ buttons.forEach(button => {
         delete activeslide.dataset.active
     })
 })
- 
