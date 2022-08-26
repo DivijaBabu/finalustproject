@@ -146,16 +146,6 @@ nav li {
     font-family: 'Arboria';
     justify-content: space-between;
 }
-.overviewcard4{
-    padding: 0.75rem;
-    display: flex;
-    background-color: white;
-    height: 5.5rem;
-    flex-basis: 25%;
-    align-items: center;
-    font-family: 'Arboria';
-    justify-content: space-between;
-}
 .text{
     font-family: 'Arboria';
     align-items: center; 
@@ -165,7 +155,6 @@ nav li {
     padding: 0.5rem;
     width: 15%;
     border: 1px;
-    /* margin-left: 7px; */
     align-items: center;
     justify-content: flex-end;
 }
@@ -173,7 +162,6 @@ nav li {
     padding: 9px 2px 4px 9px;
     width: 15%;
     border: 1px;
-    /* margin-left: 7px; */
     align-items: center;
     justify-content: flex-end;
 }
@@ -183,7 +171,6 @@ nav li {
     margin-left:3px;
 }
 .texttop{
-    /* margin-top: 10px; */
     font-family: 'Arboria';
     font-weight: 500;
     display: flex;
@@ -195,7 +182,6 @@ nav li {
 }
 .textbottom {
     display: flex;
-    /* margin-bottom: 10px; */
     padding-top: 5px;
     font-size: 30px;
     font-weight: bold;
@@ -203,14 +189,7 @@ nav li {
 .last7days{
     align-items: flex-end;
 }
-/* .textbottom2 {
-    display: flex;
-    align-items: flex-end;
-    margin-bottom: 10px;
-    padding: 5px;
-    font-size: 30px;
-    font-weight: bolder;
-} */
+
 .inside {
     display: flex;
     color: #666;
@@ -566,10 +545,6 @@ b{
         padding: 0 1rem;
         width: 21rem;
       }
-      .overviewcard4{
-        flex-basis: none;
-        width: 21rem;
-      }
       .viewshipment button {
         border: none;
         background-color: transparent;
@@ -773,7 +748,4 @@ b{
       .shipmentheader{
         height: 10.5rem;
       }
-      /* .riskcontainer{
-        height: auto;
-      } */
 }
