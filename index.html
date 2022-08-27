@@ -24,7 +24,7 @@
                     <div><a href="#"><img src="images/notification.png" alt="notification"></a></div>
                     <div class="circlered"></div>
                 </div>
-                <div>
+                <div class="tabviewaccounts">
                     <div><a href="#" class="profile2">
                             <p>DHIVIJABABU</p>
                         </a></div>
@@ -35,7 +35,7 @@
             </div>
         </div>
         <ul class="hamburgermenu">
-            <div>
+            <div class="navdirection">
                 <a href="#">
                     <div class="navigationblock active">
                         <div><img src="images/Home.jpg" alt="Dashboard"></div>
@@ -56,7 +56,7 @@
                 </a>
                 <a href="#">
                     <div class="navigationblock">
-                        <div><img src="images/contoltower.png"  alt="Control Tower"></div>
+                        <div><img src="images/contoltower.png" alt="Control Tower"></div>
                         <div class="mobilenav">Control Tower</div>
                     </div>
                 </a>
@@ -143,7 +143,7 @@
                     <div class="text">
                         <div class="inside">
                             <div>Inbound Freight as % of COGS<br></div>
-                            <img style="padding-left: 4.5px;" src="images/info@2x.png" alt="info" width="20px"
+                            <img src="images/info@2x.png" alt="info" width="20px"
                                 height="15px">
                         </div>
                         <div class="smalltext">
@@ -254,7 +254,7 @@
                     <div class="text">
                         <div class="inside">
                             <div>Inbound Freight as % of COGS<br></div>
-                            <img style="padding-left: 4.5px;" src="images/info@2x.png" alt="info" width="20px"
+                            <img src="images/info@2x.png" alt="info" width="20px"
                                 height="15px">
                         </div>
                         <div class="smalltext">
@@ -327,10 +327,37 @@
                     </div>
                     <div class="tabs-search-conatiner">
                         <div class="tabs-container">
-                            <button class="btn2 next2">&rarr;</button>
                             <div class="tab  active">All <b>(25)</b></div>
-                            <div class="tab" data-slides>
-                                Delayed <b style="color: red;">(10)</b>
+                            <div class="tab2">
+                                Delayed <b>(10)</b>
+                            </div>
+                            <div class="tab">
+                                Early <b>(6)</b>
+                            </div>
+                            <div class="tab">
+                                Resheduled <b>(2)</b>
+                            </div>
+                            <div class="tab">
+                                Under Review <b>(7)</b>
+                            </div>
+                            <div class="tab">
+                                On Time <b>(7)</b>
+                            </div>
+                        </div>
+
+                        <div class="tabscrollcontainer" id="tabsscroll">
+                            <div class="tabsscroll">
+                        
+                                    <div  onclick="arrows(1)" class="tabscrollprev">
+                                        <img src="images/scrollarrowright.png" alt="scrollright">
+                                    </div>
+                                    <div  onclick="arrows(-1)" class="tabscrollnext">
+                                        <img src="images/scrollarrowleft.png" alt="scrollleft">
+                                    </div>
+                                  
+                                    <div class="tab  active">All <b>(25)</b></div>
+                            <div class="tab2">
+                                Delayed <b>(10)</b>
                             </div>
                             <div class="tab">
                                 Early <b>(6)</b>
@@ -345,12 +372,14 @@
                                 On Time <b>(7)</b>
                             </div>
 
+                            </div>
                         </div>
+
                         <div class="searching">
                             <button class="searchingbutton">
                                 <img src="images/search.png" alt="search">
                             </button>
-                            <input type="searchbox" class="searchingbox"
+                            <input type="text" class="searchingbox"
                                 placeholder="Search by: Shipment ID, Origin, Destination, Product category, Vendor"></input>
                         </div>
                         <div class="searchingmob">
@@ -360,13 +389,14 @@
                             <input type="searchbox" class="searchingbox" placeholder="Search by:"></input>
                         </div>
                     </div>
-
                 </div>
+
+
                 <div class="shipmentcardcontainer">
                     <div class="bottomcards">
                         <div class="card">
                             <div class="shipmentcard">
-                                <div style="color:gray;font-size: 0.875rem;">
+                                <div class="shipidclass">
                                     <p>Shipment ID</p><span><b>109669449</b> </span>
                                 </div>
                                 <div class="imagecard">
@@ -419,7 +449,7 @@
 
                         <div class="card">
                             <div class="shipmentcard">
-                                <div style="color:gray;font-size: 0.875rem;">
+                                <div class="shipidclass">
                                     <p>Shipment ID</p><span><b>109669449</b> </span>
                                 </div>
                                 <div class="imagecard">
@@ -473,7 +503,7 @@
 
                         <div class="card">
                             <div class="shipmentcard">
-                                <div style="color:gray;font-size: 0.875rem;">
+                                <div class="shipidclass">
                                     <p>Shipment ID</p><span><b>109669449</b> </span>
                                 </div>
                                 <div class="imagecard">
@@ -526,7 +556,7 @@
 
                         <div class="card">
                             <div class="shipmentcard">
-                                <div style="color:gray;font-size: 0.875rem;">
+                                <div class="shipidclass">
                                     <p>Shipment ID</p><span><b>109669449</b> </span>
                                 </div>
                                 <div class="imagecard">

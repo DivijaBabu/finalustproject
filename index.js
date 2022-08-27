@@ -63,3 +63,23 @@ function showSlides(n) {
 
 
 
+function arrows(direction){
+  var container = document.getElementById('tabsscroll');
+  scrollCompleted = 0;
+  var slideVar = setInterval(function(){
+      if(direction >= 1){
+          container.scrollLeft += 5;
+      } if(direction<0) {
+          container.scrollLeft -= 5;
+      }
+      scrollCompleted += 5;
+      if(scrollCompleted >= 100)
+      {
+          window.clearInterval(slideVar);
+      }
+  }, 17);
+}
+
+
+
+
