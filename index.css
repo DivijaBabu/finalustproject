@@ -154,8 +154,17 @@ nav li {
         float: right;
         border-radius: 15px;
 }
+.overviewcontainer{
+  display: none;
+}
+.carouselcard{
+  display: none;
+}
 .overviewscrolling{
     overflow-x: scroll;
+}
+.gridscrolling{
+  display: none;
 }
 .overviewcontainer{
     width: 100%;
@@ -185,7 +194,6 @@ nav li {
     background-color: white;
     height: 5.5rem;
     width:23rem;
-    /* flex-basis: 50%; */
     align-items: center;
     font-family: 'Arboria';
     justify-content: space-between;
@@ -542,6 +550,9 @@ b{
 
 
 
+
+
+
 /* mobilephones */
 @media only screen and (max-width: 700px) {
     *{
@@ -694,7 +705,6 @@ b{
         }
         .hamburgermenu .active{
           border-left: 0.2rem solid #006e74;
-          /* color:#006e74; */
         }
          .parent_container{
           margin: 0.5rem;
@@ -766,6 +776,141 @@ b{
         }
 
 
+.overviewscrolling{
+  display: none;
+}
+        .gridscrolling::-webkit-scrollbar {
+            display: none;
+          }
+        .grid_scrolling{
+          display: none;
+        }
+          .gridscrolling{
+            display: block;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            margin:0.7rem 0.5rem 0rem 0.5rem;
+            padding: 0%;
+        }
+        .prev_1 p{
+          padding-left:0.4rem;
+          color: white;
+          padding-top: 0.1rem;
+        } 
+        .prev p{
+          padding-left:0.3rem;
+          color: white;
+          padding-top: 0.1rem;
+        }
+        .carosel{
+          display:flex;
+          margin-top: 1.7rem;
+          left:0;
+         position: absolute;
+        }
+        .carosel_1{
+          display:flex;
+          margin-top: 1.7rem;
+          right:0;
+         position: absolute;
+        }
+        
+        .prev_1{
+          display: block;
+          cursor: pointer;
+           width: 25px;
+          height: 25px;
+          float: right;
+          border-radius: 50%;
+          background-color:#006e74;
+          align-items: center;
+        }
+        .prev{
+          display: block;
+          cursor: pointer;
+           width: 25px;
+          height: 25px;
+          float: right;
+          border-radius: 50%;
+          background-color: #006e74;
+          align-items: center;
+        }
+        
+        .container2_mobile{
+            display: grid;
+            height:6rem;
+            grid-template-columns: repeat(6,1fr);
+            gap:0.5rem;
+        }
+          .carouselcard{
+          
+            display: block;
+            display: flex;
+            padding: 1rem;
+            justify-content: space-between;
+            align-items: center;
+            width:320px;
+            background-color: white;
+            color: #666;
+            height:5rem;
+          }
+          .inside_grid_box p{
+            font-size: 0.825rem;
+          }
+          .color_circles p{
+            font-size: 0.625rem;
+          }
+          .inside_grid_box {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            padding: 0.01rem;
+          }
+          .color_circles {
+            display: flex;
+            gap: 1rem;
+            color: #666;
+            font-size: 0.8rem;
+          }
+          .exclamatory_icon {
+            font-weight: none;
+            font-size: 0.825rem;
+          }
+          .numbers {
+            font-size: 1.5rem;
+            font-weight: bolder;
+            color: black;
+          }
+          .circle {
+            display: inline-block;
+            height: 10px;
+            width: 10px;
+            background-color: #53cb5d;
+            border-radius: 50%;
+          }
+          .circle1 {
+            display: inline-block;
+            height: 10px;
+            width: 10px;
+            background-color: #53cb5d;
+            border-radius: 50%;
+          }
+          .circle2 {
+            display: inline-block;
+            height: 10px;
+            width: 10px;
+            background-color: #ffc300;
+            border-radius: 50%;
+          }
+          .circle3 {
+            display: inline-block;
+            height: 10px;
+            width: 10px;
+            background-color: #f62020;
+            border-radius: 50%;
+          }
+
+
 
  
     header{
@@ -796,6 +941,7 @@ b{
     }
     .mainbodycontainer{
         padding:1rem;
+        /* padding-top:0; */
         height:auto;
     }
     .overviewcontainer{
@@ -897,9 +1043,6 @@ b{
     .tabs-container::-webkit-scrollbar{
         display:none;
     }
-    /* .tabscontainer{
-        overflow-x: scroll;
-    } */
     .searching{
         display:none;
     }

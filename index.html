@@ -25,7 +25,9 @@
                     <div class="circlered"></div>
                 </div>
                 <div>
-                    <div><a href="#" class="profile2"><p>DHIVIJABABU</p></a></div>
+                    <div><a href="#" class="profile2">
+                            <p>DHIVIJABABU</p>
+                        </a></div>
                     <div>
                         <a href="#"><img src="images/profile.png" alt="profile" width="30px" height="30px"></a>
                     </div>
@@ -73,10 +75,6 @@
         </button>
 
     </div>
-
-
-
-
     <header>
         <div class="ustlogo"><img src="images/UST Omni (non-optimized).png" alt="OMNILOGO" /></div>
         <nav class="headernavigation">
@@ -170,7 +168,7 @@
                     <div class="imagecard4"><img src="images/cubegoods.png" alt="cube" width="43px"></div>
                 </div>
 
-                <div class="overview-card" data-slides>
+                <div class="overview-card">
                     <div class="text">
                         <div class="texttop">On Time Delivery
                             <img src="images/info@2x.png" alt="info" width="22px" height="20px">
@@ -184,7 +182,7 @@
                     </div>
                 </div>
 
-                <div class="overview-card" data-slides>
+                <div class="overview-card">
                     <div class="text">
                         <div class="texttop">Cost/Pound/Mile
                             <img src="images/info@2x.png" alt="info" width="22px" height="20px">
@@ -199,6 +197,118 @@
                 </div>
             </div>
         </div>
+
+
+        <div class="gridscrolling">
+            <div class="carosel" id="carosel" onclick="plusSlides(-1)">
+                <div class="prev" id="prev">
+                    <p>
+                        < </p>
+                </div>
+            </div>
+            <div class="carosel_1" id="carosel_1">
+                <div class="prev_1" id="prev" onclick="plusSlides(1)">
+                    <p>></p>
+                </div>
+            </div>
+            <div class="container2_mobile">
+                <div class="carouselcard" id="carouselcard">
+                    <div class="text">
+                        <div class="texttop">
+                            Action to Take
+                            <img src="images/info@2x.png" alt="info" width="22px" height="20px">
+                        </div>
+                        <div class="textbottom">
+                            24
+                        </div>
+                    </div>
+                    <div class="image"><img src="images/check-circle.png" alt="info"></div>
+                </div>
+                <div class="carouselcard">
+                    <div class="text">
+                        <div class="texttop">Pending Approvals
+                            <img src="images/info@2x.png" alt="info" width="22px" height="20px">
+                        </div>
+                        <div class="textbottom">13</div>
+                    </div>
+                    <div class="image">
+                        <img src="images/clock.png" alt="info">
+                    </div>
+                </div>
+
+                <div class="carouselcard">
+                    <div class="text">
+                        <div class="texttop">Delivery in Full
+                            <img src="images/info@2x.png" alt="info" width="22px" height="20px">
+                        </div>
+                        <div class="textbottom last7days">97%
+                            <div class="lastdays">Last 7 days</div>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="images/delivery.png" alt="info">
+                    </div>          
+                </div>
+
+                <div class="carouselcard">
+                    <div class="text">
+                        <div class="inside">
+                            <div>Inbound Freight as % of COGS<br></div>
+                            <img style="padding-left: 4.5px;" src="images/info@2x.png" alt="info" width="20px"
+                                height="15px">
+                        </div>
+                        <div class="smalltext">
+                            <div>
+                                <p>Frozen</p>
+                                <div class="color1"></div>5%
+                            </div>
+                            <div>
+                                <p>Pershable</p>
+                                <div class="color2"></div>3%
+                            </div>
+                            <div>
+                                <p>Fresh</p>
+                                <div class="color3"></div>6%
+                            </div>
+                            <div>
+                                <p>Dry</p>
+                                <div class="color4"></div>10%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="imagecard4"><img src="images/cubegoods.png" alt="cube" width="43px"></div>
+                </div>
+
+                <div class="carouselcard">
+                    <div class="text">
+                        <div class="texttop">On Time Delivery
+                            <img src="images/info@2x.png" alt="info" width="22px" height="20px">
+                        </div>
+                        <div class="textbottom last7days">93%
+                            <div class="lastdays">Last 7 days</div>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="images/delivery.png" alt="info">
+                    </div>
+                </div>
+
+                <div class="carouselcard">
+                    <div class="text">
+                        <div class="texttop">Cost/Pound/Mile
+                            <img src="images/info@2x.png" alt="info" width="22px" height="20px">
+                        </div>
+                        <div class="textbottom last7days">$1.45
+                            <div class="lastdays">Last 7 days</div>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="images/delivery.png" alt="info">
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <div class="bodybottom">
             <div class="watchlistcontainer">
@@ -292,7 +402,8 @@
                                     <p>Vendor<br><span><b> Bailey</b></span></p>
                                 </div>
                                 <div class="planned">
-                                    <p>Planned ETA<br><span><b>Jan 27, 2021 03:42 PM EST</b></span></p><br><br>
+                                    <p>Planned ETA<br><span><b>Jan 27, 2021 03:42 PM EST</b></span></p>
+                                    <br><br>
                                     <p>Current ETA<br><span><b>Jan 31, 2021 10:17 PM EST</b> </span></p>
                                 </div>
                             </div>
@@ -313,7 +424,8 @@
                                 </div>
                                 <div class="imagecard">
                                     <div class="imageclass"><img src="images/globe.png" alt="globe"></div>
-                                    <div class="imageclass"><img src="images/aero.png" alt="aeroplane"></div>
+                                    <div class="imageclass"><img src="images/aero.png" alt="aeroplane">
+                                    </div>
                                     <div class="imageclass">
                                         <div class="ontime">ON TIME</div>
                                     </div>
@@ -344,7 +456,8 @@
                                     <p>Vendor<br><span><b> Bailey</b></span></p>
                                 </div>
                                 <div class="planned">
-                                    <p>Planned ETA<br><span><b>Jan 27, 2021 03:42 PM EST</b></span></p><br><br>
+                                    <p>Planned ETA<br><span><b>Jan 27, 2021 03:42 PM EST</b></span></p>
+                                    <br><br>
                                     <p>Current ETA<br><span><b>Jan 31, 2021 10:17 PM EST</b> </span></p>
                                 </div>
                             </div>
@@ -396,7 +509,8 @@
                                     <p>Vendor<br><span><b> Bailey</b></span></p>
                                 </div>
                                 <div class="planned">
-                                    <p>Planned ETA<br><span><b>Jan 27, 2021 03:42 PM EST</b></span></p><br><br>
+                                    <p>Planned ETA<br><span><b>Jan 27, 2021 03:42 PM EST</b></span></p>
+                                    <br><br>
                                     <p>Current ETA<br><span><b>Jan 31, 2021 10:17 PM EST</b> </span></p>
                                 </div>
                             </div>
@@ -448,7 +562,8 @@
                                     <p>Vendor<br><span><b> Bailey</b></span></p>
                                 </div>
                                 <div class="planned">
-                                    <p>Planned ETA<br><span><b>Jan 27, 2021 03:42 PM EST</b></span></p><br><br>
+                                    <p>Planned ETA<br><span><b>Jan 27, 2021 03:42 PM EST</b></span></p>
+                                    <br><br>
                                     <p>Current ETA<br><span><b>Jan 31, 2021 10:17 PM EST</b> </span></p>
                                 </div>
                             </div>
@@ -474,14 +589,20 @@
                         UST Omni Services
                     </h1>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem
-                        dolorem ut veritatis explicabo nesciunt eius iure debitis repellendus, provident minus. Vel,
+                        dolorem ut veritatis explicabo nesciunt eius iure debitis repellendus, provident
+                        minus. Vel,
                         minima voluptates incidunt nisi libero voluptatum itaque est suscipit consectetur
-                        fugit? Ab tenetur vel corrupti ipsa praesentium atque aspernatur modi fugaea dolore? Qui
-                        voluptatem nesciunt assumenda veniam nobis facilis saepe ex consequuntur perferendis ipsam.
+                        fugit? Ab tenetur vel corrupti ipsa praesentium atque aspernatur modi fugaea dolore?
+                        Qui
+                        voluptatem nesciunt assumenda veniam nobis facilis saepe ex consequuntur perferendis
+                        ipsam.
                         Velit alias soluta ipsam! Praesentium porro
-                        dolor mollitia aut natus, doloribus molestias totam tempore dignissimos eos eaque alias quia
-                        recusandae et aspernatur similique impedit necessitatibusquod repudiandae! Labore, autem nobis.
-                        Aliquam mollitia officia sapientealiquid optio minus aspernatur, harum ad eos qui incidunt
+                        dolor mollitia aut natus, doloribus molestias totam tempore dignissimos eos eaque
+                        alias quia
+                        recusandae et aspernatur similique impedit necessitatibusquod repudiandae! Labore,
+                        autem nobis.
+                        Aliquam mollitia officia sapientealiquid optio minus aspernatur, harum ad eos qui
+                        incidunt
                         fugiat?
                     </p>
                 </div>
