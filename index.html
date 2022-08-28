@@ -95,10 +95,7 @@
             <div><img class="notification" src="images/notification.png" alt="NOTIFICATION" /></div>
             <div class="profile-name">DHIVIJABABU</div>
             <div><img class="profile" src="images/profile.png" width="30px" height="30px" alt="profile_pic" /></div>
-            <!-- <div class="hambugericon">
-                <img src="images/hambuger.png" alt="hambugericon">
-            </div>
-        </div> -->
+           
     </header>
     <div class="mainbodycontainer">
         <div class="overviewscrolling">
@@ -143,8 +140,7 @@
                     <div class="text">
                         <div class="inside">
                             <div>Inbound Freight as % of COGS<br></div>
-                            <img src="images/info@2x.png" alt="info" width="20px"
-                                height="15px">
+                            <img src="images/info@2x.png" alt="info" width="20px" height="15px">
                         </div>
                         <div class="smalltext">
                             <div>
@@ -197,7 +193,6 @@
                 </div>
             </div>
         </div>
-
 
         <div class="gridscrolling">
             <div class="carosel" id="carosel" onclick="plusSlides(-1)">
@@ -247,15 +242,14 @@
                     </div>
                     <div class="image">
                         <img src="images/delivery.png" alt="info">
-                    </div>          
+                    </div>
                 </div>
 
                 <div class="carouselcard">
                     <div class="text">
                         <div class="inside">
                             <div>Inbound Freight as % of COGS<br></div>
-                            <img src="images/info@2x.png" alt="info" width="20px"
-                                height="15px">
+                            <img src="images/info@2x.png" alt="info" width="20px" height="15px">
                         </div>
                         <div class="smalltext">
                             <div>
@@ -309,7 +303,6 @@
             </div>
         </div>
 
-
         <div class="bodybottom">
             <div class="watchlistcontainer">
                 <div class="shipmentheader">
@@ -347,30 +340,30 @@
 
                         <div class="tabscrollcontainer" id="tabsscroll">
                             <div class="tabsscroll">
-                        
-                                    <div  onclick="arrows(1)" class="tabscrollprev">
-                                        <img src="images/scrollarrowright.png" alt="scrollright">
-                                    </div>
-                                    <div  onclick="arrows(-1)" class="tabscrollnext">
-                                        <img src="images/scrollarrowleft.png" alt="scrollleft">
-                                    </div>
-                                  
-                                    <div class="tab  active">All <b>(25)</b></div>
-                            <div class="tab2">
-                                Delayed <b>(10)</b>
-                            </div>
-                            <div class="tab">
-                                Early <b>(6)</b>
-                            </div>
-                            <div class="tab">
-                                Resheduled <b>(2)</b>
-                            </div>
-                            <div class="tab">
-                                Under Review <b>(7)</b>
-                            </div>
-                            <div class="tab">
-                                On Time <b>(7)</b>
-                            </div>
+
+                                <div onclick="arrows(1)" class="tabscrollprev">
+                                    <img src="images/scrollarrowright.png" alt="scrollright">
+                                </div>
+                                <div onclick="arrows(-1)" class="tabscrollnext">
+                                    <img src="images/scrollarrowleft.png" alt="scrollleft">
+                                </div>
+
+                                <div class="tab  active">All <b>(25)</b></div>
+                                <div class="tab2">
+                                    Delayed <b>(10)</b>
+                                </div>
+                                <div class="tab">
+                                    Early <b>(6)</b>
+                                </div>
+                                <div class="tab">
+                                    Resheduled <b>(2)</b>
+                                </div>
+                                <div class="tab">
+                                    Under Review <b>(7)</b>
+                                </div>
+                                <div class="tab">
+                                    On Time <b>(7)</b>
+                                </div>
 
                             </div>
                         </div>
@@ -379,14 +372,16 @@
                             <button class="searchingbutton">
                                 <img src="images/search.png" alt="search">
                             </button>
-                            <input type="text" class="searchingbox"
-                                placeholder="Search by: Shipment ID, Origin, Destination, Product category, Vendor"></input>
+                            <input id="searchbar" onkeyup="searchshipment()" class="searchingbox" type="text"
+                                name="search"
+                                placeholder="Search by: Shipment ID, Origin, Destination, Product category, Vendor">
                         </div>
                         <div class="searchingmob">
                             <button class="searchingbutton">
                                 <img src="images/search.png" alt="search">
                             </button>
-                            <input type="searchbox" class="searchingbox" placeholder="Search by:"></input>
+                            <input id="searchmobile" onkeyup="searchshipmentmobile()" class="searchingbox" type="text"
+                                name="search" placeholder="Search:">
                         </div>
                     </div>
                 </div>
@@ -397,7 +392,7 @@
                         <div class="card">
                             <div class="shipmentcard">
                                 <div class="shipidclass">
-                                    <p>Shipment ID</p><span><b>109669449</b> </span>
+                                    <p>Shipment ID</p><span><b>109666445</b> </span>
                                 </div>
                                 <div class="imagecard">
                                     <div class="imageclass"><img src="images/globe.png" alt="globe"></div>
@@ -504,7 +499,7 @@
                         <div class="card">
                             <div class="shipmentcard">
                                 <div class="shipidclass">
-                                    <p>Shipment ID</p><span><b>109669449</b> </span>
+                                    <p>Shipment ID</p><span><b>109665467</b> </span>
                                 </div>
                                 <div class="imagecard">
                                     <div class="imageclass"><img src="images/globe.png" alt="globe"></div>
@@ -557,7 +552,7 @@
                         <div class="card">
                             <div class="shipmentcard">
                                 <div class="shipidclass">
-                                    <p>Shipment ID</p><span><b>109669449</b> </span>
+                                    <p>Shipment ID</p><span><b>104695489</b> </span>
                                 </div>
                                 <div class="imagecard">
                                     <div class="imageclass"><img src="images/globe.png" alt="globe"></div>
@@ -609,6 +604,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="riskcontainer">
                 <div class="riskheader">
                     <div>Risk Chain</div>
@@ -637,6 +633,7 @@
                     </p>
                 </div>
             </div>
+
         </div>
 
     </div>
