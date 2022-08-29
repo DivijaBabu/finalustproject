@@ -68,12 +68,12 @@ function arrows(direction){
   scrollCompleted = 0;
   var slideVar = setInterval(function(){
       if(direction >= 1){
-          container.scrollLeft += 5;
+          container.scrollLeft += 7;
       } if(direction<0) {
-          container.scrollLeft -= 5;
+          container.scrollLeft -= 7;
       }
-      scrollCompleted += 5;
-      if(scrollCompleted >= 100)
+      scrollCompleted += 3;
+      if(scrollCompleted >= 30)
       {
           window.clearInterval(slideVar);
       }

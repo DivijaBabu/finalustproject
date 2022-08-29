@@ -279,6 +279,7 @@ nav li {
   padding-top: 5px;
   font-size: 30px;
   font-weight: bold;
+  color:black;
 }
 
 .last7days {
@@ -476,8 +477,8 @@ nav li {
 }
 
 .active {
-  color: #fff;
-  background-color: #006e74;
+  color:black;
+  /* background-color: #006e74; */
 }
 
 .activedash {
@@ -727,7 +728,7 @@ b {
   .hamburgermenu {
     position: fixed;
     transform: translateY(-100%);
-    transition: transform 0.2s;
+    transition: transform 0.7s;
     top: 0;
     left: 0;
     right: 0;
@@ -950,36 +951,36 @@ b {
   }
 
   .prev_1 p {
-    padding-left: 0.4rem;
+    padding-left: 0.7rem;
     color: white;
-    padding-top: 0.1rem;
+    padding-top: 0.3rem;
   }
 
   .prev p {
-    padding-left: 0.3rem;
+    padding-left: 0.7rem;
     color: white;
-    padding-top: 0.1rem;
+    padding-top: 0.3rem;
   }
 
   .carosel {
     display: flex;
     margin-top: 1.7rem;
-    left: 0;
+    left: 14px;
     position: absolute;
   }
 
   .carosel_1 {
     display: flex;
     margin-top: 1.7rem;
-    right: 0;
+    right: 14px;
     position: absolute;
   }
 
   .prev_1 {
     display: block;
     cursor: pointer;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     float: right;
     border-radius: 50%;
     background-color: #006e74;
@@ -989,8 +990,8 @@ b {
   .prev {
     display: block;
     cursor: pointer;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     float: right;
     border-radius: 50%;
     background-color: #006e74;
@@ -1095,22 +1096,30 @@ b {
     margin: 0.2rem 1rem 0.2rem 0rem;
   }
   .tabscrollprev{
-    right:0;
+    right:14px;
     display:flex;
     position:absolute;
     color: #fff;
-    width:30px;
-    height:30px;
+    width:50px;
+    height:60px;
     border-radius: 70px;
   }
   .tab{
     height: 2.5rem;
   }
-  .tabscrollnext img{
-    background-color: #006e74;
+  .tabscrollprev{
+    width:50px;
+    height:60px;
   }
+  .tabscrollnext img{
+    width:50px;
+    height:60px;
+  }
+  /* .tabscrollnext img{
+    background-color: #006e74;
+  } */
   .tabscrollnext{
-    left:0;
+    left:14px;
     display: flex;
     position: absolute;
     color: #fff;
@@ -1456,7 +1465,7 @@ b {
     justify-content: space-between;
     position: fixed;
     transform: translateY(-100%);
-    transition: transform 0.2s;
+    transition: transform 0.5s;
     top: 0;
     left: 0;
     right: 0;
