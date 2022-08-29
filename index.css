@@ -40,9 +40,9 @@ body {
   height: 100vh;
 }
 
-.headerbar {
+/* .headerbar {
   display: none;
-}
+} */
 
 header {
   border: 5px #747171;
@@ -913,20 +913,20 @@ b {
     background-color: #ee2d2d;
   }
 
-  .user_login {
+  /* .user_login {
     display: block;
     display: flex;
     width: 40%;
-  }
+  } */
 
   .mobilenav:focus {
     font-family: 'Arboria';
     background-color: #006e74;
   }
 
-  .login a:hover {
+  /* .login a:hover {
     color: #006e74;
-  }
+  } */
 
 
   .overviewscrolling {
